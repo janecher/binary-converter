@@ -10,7 +10,7 @@ Webpage, where you can convert binary string to decimal number, and decimal numb
 
 ## Setup/Installation Requirements
 
-* URL: janecher.github.io/binary-converter/index.html
+* https://janecher.github.io/binary-converter/index.html
 * Clone/download repository (click green button "clone or download" and click downlown ZIP or use "git clone https://github.com/janecher/binary-converter.git" command in your terminal)
 * Open index.html file in the browser
 
