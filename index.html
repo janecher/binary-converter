@@ -7,20 +7,32 @@
     <script src="js/scripts.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Binary converter</title>
+    <title>Binary-decimal converter</title>
 </head>
 <body>
     <div class="container">
-        <h1>Convert binary string to the decimal</h1>
+        <h1>Binary-decimal converter</h1>
+        <h3>Choose conversion:</h3>
+        <div class="radio">
+            <label>
+              <input type="radio" name="conversion" value="decimal" checked>
+              To Decimal
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+              <input type="radio" name="conversion" value="binary">
+              To Binary
+            </label>
+        </div>
         <form>
             <div class="form-group">
-                <label for="input">Input binary string:</label>
-                <input type="text" id="binary" class="form-control">
+                <input type="text" id="input" class="form-control">
             </div>
             <button type="submit" class="btn">Convert</button>
         </form>
-        <div class="answer">
-            <p>Decimal result is: <span id="result"></span></p>
+        <div id="answer">
+
         </div>
     </div>
     
