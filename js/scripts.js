@@ -6,10 +6,8 @@ const isBinaryString = function(str){
 
 const toDecimal = function(str){
   let number = 0;
-  for(let i = str.length-1; i >= 0; i--) {
-    console.log(parseInt(str.charAt(i)));
-    number += Math.pow(2, parseInt(str.charAt(i)));
-    console.log(number);
+  for(let i = 0; i < str.length; i++) {
+    number += (parseInt(str.charAt(i))) * Math.pow(2, str.length-i-1);
   }
   return number;
 }
@@ -30,7 +28,6 @@ $(document).ready(function(){
     $("#answer").empty();
     if($("input:radio[name=conversion]:checked").val() === "decimal"){
       const binaryString = $("input#input").val();
-      console.log(binaryString);
       if(!binaryString) {
         alert("Input your binary string");
         $("input#input").val("");
